@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Николай Симанович](https://up.htmlacademy.ru/htmlcss/30/user/1651627).
-* Наставник: [Влад Донченко] (https://htmlacademy.ru/profile/id608811).
+* Наставник: [Влад Донченко](https://htmlacademy.ru/profile/id608811).
 
 ---
 
