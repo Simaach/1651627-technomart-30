@@ -20,53 +20,59 @@
 
 @font-face {
   font-family: "Cuprum";
-  src: url(../fonts/cuprum.woff2) format(woff2),
-    url(../fonts/cuprum.woff) format(woff);
+  src: url("../fonts/cuprum.woff2") format("woff2"),
+    url("../fonts/cuprum.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Cuprum";
-  src: url(../fonts/cuprumitalic.woff2) format(woff2),
-    url(../fonts/cuprumitalic.woff) format(woff);
+  src: url("../fonts/cuprumitalic.woff2") format("woff2"),
+    url("../fonts/cuprumitalic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Cuprum";
-  src: url(../fonts/cuprumbold.woff2) format(woff2),
-    url(../fonts/cuprumbold.woff) format(woff);
+  src: url("../fonts/cuprumbold.woff2") format("woff2"),
+    url("../fonts/cuprumbold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: url(../fonts/ptsans.woff2) format(woff2),
-    url(../fonts/ptsans.woff) format(woff);
+  src: url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: url(../fonts/ptsansbold.woff2) format(woff2),
-    url(../fonts/ptsansbold.woff) format(woff);
+  src: url("../fonts/ptsansbold.woff2") format("woff2"),
+    url("../fonts/ptsansbold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 .page-body {
-  min-width: 1200px;
-  margin: 0;
-  padding: 0;
+  min-width: 960px;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.main-navigation {
+  border-color: var(--color-blue);
 }
 
 .button,
 .navigation-button {
-  font-family: Cuprum;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: var(--color-white);
@@ -74,14 +80,14 @@
 }
 
 .company-info {
-  font-family: Cuprum;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: var(--color-black);
 }
 
 .button-bookmark {
-  font-family: Cuprum;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: var(--color-blue);
@@ -89,7 +95,7 @@
 }
 
 .heading {
-  font-family: Cuprum;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
@@ -97,7 +103,7 @@
 }
 
 .phone {
-  font-family: Cuprum;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
@@ -106,7 +112,7 @@
 }
 
 .address {
-  font-family: Cuprum;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: var(--color-blue);
@@ -114,7 +120,7 @@
 
 .login,
 .reg {
-  font-family: Cuprum;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-size: 21px;
   line-height: 21px;
   text-decoration: none;
@@ -125,7 +131,7 @@
 }
 
 .menu {
-  font-family: Cuprum;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
@@ -133,7 +139,7 @@
 }
 
 .button-menu {
-  font-family: Cuprum;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: var(--color-white);
@@ -141,12 +147,12 @@
   text-transform: uppercase;
 }
 
-.none {
+.list-reset {
   list-style: none;
 }
 
 .slide-info {
-  font-family: Cuprum;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
@@ -155,14 +161,14 @@
 }
 
 .slide-description {
-  font-family: Cuprum;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: var(--color-white);
 }
 
 .subtitle {
-  font-family: Cuprum;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -170,7 +176,7 @@
 }
 
 .subtitle-service {
-  font-family: Cuprum;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -178,7 +184,7 @@
 }
 
 .price {
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -188,7 +194,7 @@
 }
 
 .product-info {
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
@@ -196,7 +202,7 @@
 }
 
 .delete {
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -204,8 +210,9 @@
   color: var(--click-link-grey);
 }
 
-.service-info, .contacts-info {
-  font-family: PT Sans;
+.service-info,
+.contacts-info {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
@@ -221,7 +228,7 @@
 }
 
 .service-list {
-  font-family: Cuprum;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
@@ -237,21 +244,22 @@
 }
 
 .copyright {
-  font-family: Cuprum;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: var(--color-white);
 }
 
-.feedback, .developed {
-  font-family: Cuprum;
+.feedback,
+.developed {
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: var(--color-white);
 }
 
 .connection {
-  font-family: Cuprum;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: var(--gold);
