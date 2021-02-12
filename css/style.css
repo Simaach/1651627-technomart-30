@@ -3,19 +3,27 @@
   --basic-greylight: #c5c5c5;
   --basic-background-grey: #f1f5f7;
   --color-white: #ffffff;
+  --white-translucent: rgba(255, 255, 255, 0.5);
   --color-black: #000000;
-  --darkblue: #293449;
+  --dark-blue: #293449;
+  --dark-blue-active: #1d2739;
   --color-blue: #32425c;
+  --color-light-blue: #3bbce3;
+  --color-purple: #dc91d8;
   --gold: #ffd180;
-  --color-dakrred: #ba2732;
+  --color-dakr-red: #ba2732;
   --click-grey: rgba(255, 255, 255, 0.5);
   --click-link-grey: #a9a9a9;
   --red-link: #ca2c37;
   --basic-green: #63a63e;
-  --lightgreen: #5fbb2d;
-  --darkgreen: #518534;
-  --darkgold: #ffbf47;
+  --light-green: #5fbb2d;
+  --dark-green: #518534;
+  --color-green: #8ed78f;
+  --dark-gold: #ffbf47;
   --color-snow: #f3f7f9;
+  --color-cream: #f9f5f0;
+  --primary-font: "Cuprum", Arial, Helvetica, sans-serif;
+  --secondary-font: "PT Sans", Arial, Helvetica, sans-serif;
 }
 
 @font-face {
@@ -60,42 +68,121 @@
 
 .page-body {
   min-width: 960px;
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-family: var(--secondary-font);
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
 }
 
+.main-header {
+  background-color: var(--basic-background-grey);
+}
+
+.main-header-wrapper-top {
+  background-color: var(--dark-blue);
+}
+
 .main-navigation {
-  border-color: var(--color-blue);
+  background-color: var(--color-blue);
+}
+
+.main-header-logo {
+  text-align: center;
+  padding: 56px 12px 56px 17px;
+  background-color: var(--basic-red);
+  display: inline-flex;
 }
 
 .button,
-.navigation-button {
-  font-family: "Cuprum", Arial, Helvetica, sans-serif;
+.main-navigation-button {
+  font-family: var(--primary-font);
   font-size: 18px;
   line-height: 24px;
   color: var(--color-white);
   text-decoration: none;
 }
 
+.main-navigation-button:hover {
+  background-color: var(--dark-blue);
+}
+
+.main-navigation-button:active {
+  background-color: var(--dark-blue-active);
+  box-shadow: inset 0px -5px 0px #293449;
+  opacity: 0.5;
+}
+
+.all-items-button {
+  background-color: var(--basic-red);
+}
+
+.all-items-button:hover {
+  background-color: var(--red-link);
+}
+
+.all-items-button:active {
+  background-color: var(--color-dakr-red);
+}
+
+.order-button {
+  background-color: var(--basic-green);
+}
+
+.order-button:hover {
+  background-color: var(--light-green);
+}
+
+.order-button:active {
+  background-color: var(--basic-green);
+  color: var(--white-translucent);
+}
+
 .company-info {
-  font-family: "Cuprum", Arial, Helvetica, sans-serif;
+  font-family: var(--primary-font);
   font-size: 18px;
   line-height: 24px;
   color: var(--color-black);
 }
 
-.button-bookmark {
+.buy-button {
   font-family: "Cuprum", Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  color: var(--color-blue);
+  font-size: 14px;
+  line-height: 18px;
   text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-white);
+  background-color: var(--basic-green);
 }
 
-.heading {
-  font-family: "Cuprum", Arial, Helvetica, sans-serif;
+.buy-button:hover {
+  background-color: var(--light-green);
+}
+
+.buy-button:active {
+  background-color: var(--dark-green);
+}
+
+.to-bookmarks-button {
+  font-family: var(--primary-font);
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-blue);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-blue);
+  border: 3px solid var(--basic-green);
+}
+
+.to-bookmarks-button:hover {
+  border-color: var(--color-blue);
+}
+
+.to-bookmarks-button:active {
+  opacity: 0.3;
+}
+
+.main-heading {
+  font-family: var(--primary-font);
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
@@ -103,7 +190,7 @@
 }
 
 .phone {
-  font-family: "Cuprum", Arial, Helvetica, sans-serif;
+  font-family: var(--primary-font);
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
@@ -112,39 +199,83 @@
 }
 
 .address {
-  font-family: "Cuprum", Arial, Helvetica, sans-serif;
+  font-family: var(--primary-font);
+  font-style: normal;
   font-size: 14px;
   line-height: 24px;
   color: var(--color-blue);
 }
 
 .login,
-.reg {
-  font-family: "Cuprum", Arial, Helvetica, sans-serif;
+.registration {
+  font-family: var(--primary-font);
   font-size: 21px;
   line-height: 21px;
   text-decoration: none;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  opacity: 0,0001;
+}
+
+.login:hover,
+.registration:hover {
+  color: var(--basic-red);
+}
+
+.login:active,
+.registration:active {
+  color: var(--basic-greylight);
 }
 
 .navigation-list {
   background-color: var(--color-blue);
 }
 
-.menu {
-  font-family: "Cuprum", Arial, Helvetica, sans-serif;
+.offers {
+  font-family: var(--primary-font);
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
   color: var(--color-white);
 }
 
-.button-menu {
-  font-family: "Cuprum", Arial, Helvetica, sans-serif;
+.offers-item-yellow {
+  background-color: var(--dark-gold);
+}
+
+.offers-item-light-blue {
+  background-color: var(--color-light-blue);
+}
+
+.offers-item-purple {
+  background-color: var(--color-purple);
+}
+
+.offers-item-green {
+  background-color: var(--color-green);
+}
+
+.button-offers-transparency {
+  font-family: var(--primary-font);
   font-size: 14px;
   line-height: 18px;
   color: var(--color-white);
   text-decoration: none;
   text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 10px 24px 10px 23px;
+}
+
+.button-offers-transparency:hover {
+  background-color: var(--basic-greylight);
+  opacity: 0.3;
+  color: var(--color-white);
+}
+
+.button-offers-transparency:active {
+  background-color: var(--click-link-grey);
+  opacity: 0.3;
+  color: var(--color-white);
 }
 
 .list-reset {
@@ -152,7 +283,7 @@
 }
 
 .slide-info {
-  font-family: "Cuprum", Arial, Helvetica, sans-serif;
+  font-family: var(--primary-font);
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
@@ -161,48 +292,51 @@
 }
 
 .slide-description {
-  font-family: "Cuprum", Arial, Helvetica, sans-serif;
+  font-family: var(--primary-font);
   font-size: 18px;
   line-height: 24px;
   color: var(--color-white);
 }
 
-.subtitle {
-  font-family: "Cuprum", Arial, Helvetica, sans-serif;
+.h2,
+.h3 {
+  font-family: var(--primary-font);
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   color: var(--color-blue)
 }
 
-.subtitle-service {
-  font-family: "Cuprum", Arial, Helvetica, sans-serif;
-  font-size: 30px;
-  line-height: 30px;
-  text-transform: uppercase;
+.caption-color {
   color: var(--color-black);
 }
 
-.price {
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+.cream-wrap {
+  background-color: var(--color-cream);
+  padding: 29px 648px 30px 28px;
+}
+
+.product-price {
+  font-family: var(--secondary-font);
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--color-white);
+  background-color: var(--basic-red);
 }
 
-.product-info {
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+.product-title {
+  font-family: var(--secondary-font);
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
   color: var(--color-black)
 }
 
-.delete {
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+.old-product-price {
+  font-family: var(--secondary-font);
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -210,41 +344,83 @@
   color: var(--click-link-grey);
 }
 
-.service-info,
-.contacts-info {
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+.service-description,
+.contacts-description {
+  font-family: var(--secondary-font);
   font-size: 13px;
   line-height: 24px;
-  color: #000000;
+  color: var(--color-black);
 }
 
 .hidden {
   visibility: hidden;
 }
 
-.button-transparency {
-  background: rgba(255, 255, 255, 0.3);
-  padding: 10px 24px 10px 23px;
-}
-
-.service-list {
-  font-family: "Cuprum", Arial, Helvetica, sans-serif;
+.service-list-item {
+  font-family: var(--primary-font);
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
   text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-blue);
 }
 
-.button-footer {
+.service-list-item:hover {
+  background-color: var(--dark-blue);
+  color: var(--color-white);
+}
+
+.service-list-item:active {
+  color: var(--color-blue);
+  background-color: var(--color-white);
+}
+
+.main-footer {
+  background-color: var(--color-blue);
+}
+
+.main-footer-bottom {
+  background-color: var(--dark-blue);
+}
+
+.main-footer-address {
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  color: var(--color-snow);
+}
+
+.button-footer-grey {
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
   color: var(--basic-background-grey);
+  text-decoration: none;
 }
 
-.button-gold {
+.button-footer-gold {
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
   color: var(--gold);
+  text-decoration: none;
+}
+
+.button-footer-grey:hover,
+.button-footer-gold:hover {
+  text-decoration-line: underline;
+}
+
+.button-footer-grey:active,
+.button-footer-gold:active {
+  opacity: 0.5;
 }
 
 .copyright {
-  font-family: "Cuprum", Arial, Helvetica, sans-serif;
+  font-family: var(--primary-font);
   font-size: 16px;
   line-height: 18px;
   color: var(--color-white);
@@ -252,15 +428,25 @@
 
 .feedback,
 .developed {
-  font-family: "Cuprum", Arial, Helvetica, sans-serif;
+  font-family: var(--primary-font);
   font-size: 16px;
   line-height: 18px;
   color: var(--color-white);
 }
 
 .connection {
-  font-family: "Cuprum", Arial, Helvetica, sans-serif;
+  font-family: var(--primary-font);
   font-size: 16px;
   line-height: 18px;
   color: var(--gold);
+  text-decoration: none;
+}
+
+.connection:hover {
+  text-decoration-line: underline;
+}
+
+.connection:active {
+  color: var(--red-link);
+  text-decoration: none;
 }
