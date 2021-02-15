@@ -22,6 +22,7 @@
   --dark-gold: #ffbf47;
   --color-snow: #f3f7f9;
   --color-cream: #f9f5f0;
+  --color-dark-cream: #f7f3ec;
   --primary-font: "Cuprum", Arial, Helvetica, sans-serif;
   --secondary-font: "PT Sans", Arial, Helvetica, sans-serif;
 }
@@ -68,9 +69,17 @@
 
 .page-body {
   min-width: 960px;
-  font-family: var(--secondary-font);
+  font-family: var(--primary-font);
   font-size: 13px;
   line-height: 24px;
+  font-weight: 400;
+}
+
+.catalog-page {
+  min-width: 960px;
+  font-family: var(--secondary-font);
+  font-size: 13px;
+  line-height: 18px;
   font-weight: 400;
 }
 
@@ -91,6 +100,10 @@
   padding: 56px 12px 56px 17px;
   background-color: var(--basic-red);
   display: inline-flex;
+}
+
+.main-header-logo:active {
+  background-color: var(--color-dakr-red);
 }
 
 .button,
@@ -145,7 +158,7 @@
 }
 
 .buy-button {
-  font-family: "Cuprum", Arial, Helvetica, sans-serif;
+  font-family: "Cuprum";
   font-size: 14px;
   line-height: 18px;
   text-decoration: none;
@@ -207,14 +220,15 @@
 }
 
 .login,
-.registration {
+.registration,
+.user-account {
   font-family: var(--primary-font);
   font-size: 21px;
   line-height: 21px;
   text-decoration: none;
   color: var(--color-black);
   background-color: var(--color-white);
-  opacity: 0,0001;
+  opacity: 0, 0001;
 }
 
 .login:hover,
@@ -304,7 +318,7 @@
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
-  color: var(--color-blue)
+  color: var(--color-blue);
 }
 
 .caption-color {
@@ -385,7 +399,7 @@
 }
 
 .main-footer-address {
-  font-family: "Cuprum", Arial, Helvetica, sans-serif;
+  font-family: "Cuprum";
   font-style: normal;
   font-size: 18px;
   line-height: 24px;
@@ -394,7 +408,7 @@
 }
 
 .button-footer-grey {
-  font-family: "Cuprum", Arial, Helvetica, sans-serif;
+  font-family: "Cuprum";
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-background-grey);
@@ -402,7 +416,7 @@
 }
 
 .button-footer-gold {
-  font-family: "Cuprum", Arial, Helvetica, sans-serif;
+  font-family: "Cuprum";
   font-size: 18px;
   line-height: 24px;
   color: var(--gold);
@@ -449,4 +463,146 @@
 .connection:active {
   color: var(--red-link);
   text-decoration: none;
+}
+
+.breadcrumbs-item-link {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-black);
+}
+
+.grey-wrap {
+  background-color: var(--basic-background-grey);
+}
+
+.basket-with-goods {
+  background-color: var(--basic-red);
+}
+
+.filter-title,
+.filter-price-range,
+.filter-input-price-range,
+.sorting-wrap {
+  font-family: var(--secondary-font);
+  font-size: 13px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: var(--color-dark-cream);
+}
+
+.filter-manufacturers-item,
+.power-item {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: var(--color-black);
+}
+
+.show-filters-button {
+  background-color: var(--color-white);
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  font-family: var(--secondary-font);
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--color-black);
+}
+
+.filter-price,
+.filter-manufacturers,
+.filter-power {
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.sorting-type {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration-style: dotted;
+  color: var(--color-black);
+  opacity: 0.3;
+}
+
+.sorting-type:hover {
+  color: var(--color-black);
+  opacity: 1;
+  text-decoration-style: solid;
+}
+
+.sorting-type:active {
+  color: var(--basic-red);
+  opacity: 1;
+  text-decoration-style: solid;
+}
+
+.pagination-item {
+  background-color: var(--color-white);
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.pagination-item-link {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+.pagination-item-current {
+  background-color: var(--basic-red);
+  color: var(--color-white);
+}
+
+.pagination-item:hover {
+  border: 1px solid var(--basic-greylight);
+}
+
+.pagination-item:active {
+  border: 1px solid var(--basic-red);
+}
+
+.hammer-drill-article {
+  background-color: var(--basic-background-grey);
+}
+
+.hammer-drill-title {
+  font-family: var(--secondary-font);
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--color-black);
+}
+
+.hammer-drill-discription {
+  font-family: var(--secondary-font);
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.my-orders,
+.personal-area {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  color: var(--color-blue);
 }
