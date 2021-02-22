@@ -97,7 +97,10 @@
 
 .main-header-logo {
   text-align: center;
-  padding: 56px 12px 56px 17px;
+  padding-top: 12px;
+  padding-right: 56px;
+  padding-bottom: 17px;
+  padding-left: 56px;
   background-color: var(--basic-red);
   display: inline-flex;
 }
@@ -107,7 +110,7 @@
 }
 
 .button,
-.main-navigation-button {
+.main-navigation-link {
   font-family: var(--primary-font);
   font-size: 18px;
   line-height: 24px;
@@ -115,11 +118,11 @@
   text-decoration: none;
 }
 
-.main-navigation-button:hover {
+.main-navigation-link:hover {
   background-color: var(--dark-blue);
 }
 
-.main-navigation-button:active {
+.main-navigation-link:active {
   background-color: var(--dark-blue-active);
   box-shadow: inset 0px -5px 0px #293449;
   opacity: 0.5;
@@ -158,7 +161,7 @@
 }
 
 .buy-button {
-  font-family: "Cuprum";
+  font-family: var(--primary-font);
   font-size: 14px;
   line-height: 18px;
   text-decoration: none;
@@ -175,7 +178,7 @@
   background-color: var(--dark-green);
 }
 
-.to-bookmarks-button {
+.button to-bookmarks-button {
   font-family: var(--primary-font);
   font-size: 14px;
   line-height: 18px;
@@ -186,11 +189,11 @@
   border: 3px solid var(--basic-green);
 }
 
-.to-bookmarks-button:hover {
+.button to-bookmarks-button:hover {
   border-color: var(--color-blue);
 }
 
-.to-bookmarks-button:active {
+.button to-bookmarks-button:active {
   opacity: 0.3;
 }
 
@@ -202,16 +205,19 @@
   color: var(--basic-red);
 }
 
-.phone {
+.main-heading-phone {
   font-family: var(--primary-font);
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
   color: var(--basic-red);
   text-decoration: none;
+  border: 3px solid var(--color-white);
+  background-color: var(--color-snow);
+  box-sizing: border-box;
 }
 
-.address {
+.main-heading-address {
   font-family: var(--primary-font);
   font-style: normal;
   font-size: 14px;
@@ -228,7 +234,6 @@
   text-decoration: none;
   color: var(--color-black);
   background-color: var(--color-white);
-  opacity: 0, 0001;
 }
 
 .login:hover,
@@ -277,23 +282,26 @@
   text-decoration: none;
   text-transform: uppercase;
   background: rgba(255, 255, 255, 0.3);
-  padding: 10px 24px 10px 23px;
+  padding-top: 10px;
+  padding-right: 24px;
+  padding-bottom: 10px;
+  padding-left: 23px;
 }
 
 .button-offers-transparency:hover {
   background-color: var(--basic-greylight);
   opacity: 0.3;
-  color: var(--color-white);
 }
 
 .button-offers-transparency:active {
   background-color: var(--click-link-grey);
   opacity: 0.3;
-  color: var(--color-white);
 }
 
 .list-reset {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .slide-info {
@@ -327,7 +335,10 @@
 
 .cream-wrap {
   background-color: var(--color-cream);
-  padding: 29px 648px 30px 28px;
+  padding-top: 29px;
+  padding-right: 648px;
+  padding-bottom: 30px;
+  padding-left: 28px;
 }
 
 .product-price {
@@ -399,7 +410,7 @@
 }
 
 .main-footer-address {
-  font-family: "Cuprum";
+  font-family: var(--primary-font);
   font-style: normal;
   font-size: 18px;
   line-height: 24px;
@@ -408,7 +419,7 @@
 }
 
 .button-footer-grey {
-  font-family: "Cuprum";
+  font-family: var(--primary-font);
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-background-grey);
@@ -416,7 +427,7 @@
 }
 
 .button-footer-gold {
-  font-family: "Cuprum";
+  font-family: var(--primary-font);
   font-size: 18px;
   line-height: 24px;
   color: var(--gold);
@@ -466,7 +477,7 @@
 }
 
 .breadcrumbs-item-link {
-  font-family: "PT Sans";
+  font-family: var(--secondary-font);
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
@@ -479,7 +490,7 @@
   background-color: var(--basic-background-grey);
 }
 
-.basket-with-goods {
+.button-red {
   background-color: var(--basic-red);
 }
 
@@ -537,7 +548,6 @@
 }
 
 .sorting-type:hover {
-  color: var(--color-black);
   opacity: 1;
   text-decoration-style: solid;
 }
